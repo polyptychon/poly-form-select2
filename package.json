@@ -78,7 +78,7 @@
   },
   "dependencies": {
     "animationframe": "git://github.com/HarrisSidiropoulos/animationframe",
-    "jquery": "^2.1.1",
+    "jquery": "^2.1.1"
   },
   "scripts": {
     "test": "gulp test",

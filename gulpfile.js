@@ -49,14 +49,9 @@ var DEVELOPMENT = 'development',
     TEST = "test",
     watching = false,
     not_in_dependencies_libs = [
-      "pen",
-      "pen/src/markdown",
       "angular/angular",
       'select2/select2',
-      'ui-select2/src/select2',
-      'bootstrap-datepicker/js/bootstrap-datepicker',
-      'angular-ui-utils/modules/validate/validate',
-      'angular-ui-utils/modules/mask/mask'
+      'ui-select2/src/select2'
     ];
 
 var env = process.env.NODE_ENV || DEVELOPMENT;
@@ -138,7 +133,7 @@ gulp.task('lib', function() {
     .pipe(plumber({
       errorHandler: handleError
     }))
-    .pipe(myCoffee('_lib', 'poly-form.min.js'));
+    .pipe(myCoffee('_lib', 'poly-select2.min.js'));
 
   gulp.src(dependencies)
     return browserify()
@@ -148,7 +143,7 @@ gulp.task('lib', function() {
           console.log(err.message);
           this.end();
         })
-      .pipe(source('poly-form-lib.min.js'))
+      .pipe(source('poly-select2-lib.min.js'))
       .pipe(duration('vendor'))
       .pipe(buffer())
       .pipe(gulpif(env === PRODUCTION, uglify()))
