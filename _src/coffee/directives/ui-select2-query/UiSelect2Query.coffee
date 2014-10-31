@@ -1,8 +1,4 @@
-if jQuery?
-  $ = jQuery
-else
-  $ = require "jquery"
-
+if jQuery? then $ = jQuery else $ = require "jquery"
 formatStringURL = require "../../utils/FormatStringURL.coffee"
 
 module.exports = ($timeout, $http) ->
