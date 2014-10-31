@@ -1,18 +1,18 @@
 {
-  "name": "polyForm",
+  "name": "poly-select2",
   "version": "0.1.0",
-  "description": "Angular based form directives",
+  "description": "Angular wrapper for select2",
   "main": "_src/coffee/main.coffee",
-  "main.scss": "_src/sass/poly-form.scss",
+  "main.scss": "_src/sass/poly-select2.scss",
   "author": "Harris Sidiropoulos",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/polyptychon/polyForm/issues"
+    "url": "https://github.com/polyptychon/poly-select2/issues"
   },
-  "homepage": "https://github.com/polyptychon/polyForm",
+  "homepage": "https://github.com/polyptychon/poly-select2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/polyptychon/polyForm.git"
+    "url": "https://github.com/polyptychon/poly-select2.git"
   },
   "browserify": {
     "transform": [
