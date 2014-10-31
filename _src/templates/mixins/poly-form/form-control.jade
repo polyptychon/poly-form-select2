@@ -1,0 +1,50 @@
+include form-input
+include date-input
+include select2
+include select
+include checkbox
+include radio-group
+include textarea
+include validation-messages
+
+mixin form-control(options)
+  - options       = options               || {}
+
+  - className     = options.class         || 'col-md-6'
+  - useLabel      = options.useLabel      || 'true'
+  - type          = options.type          || 'text'
+  - name          = options.name          || 'control'
+  - $$id = $$id || 0
+  - id            = options.id            || (options.name+$$id || $$id)
+  - label         = options.label         || 'Ετικέτα'
+  - popover       = options.popover       || null
+
+  form-control(class=className+(useLabel=="true"?'':' no-label'))
+    case type
+      when "checkbox"
+        +checkbox(options)
+      when "radio"
+        +radio-group(options)
+      default
+        if useLabel=="true"
+          label(for=id)= label
+
+        case type
+          when "textarea"
+            +textarea(options)
+          when "select"
+            +select(options)
+          when "select2"
+            +select2(options)
+          when "dateInput"
+            +date-input(options)
+          default
+            +form-input(options)
+
+        valid-icon
+        loader-icon
+
+        if popover
+          popover= popover
+
+    +validation-messages(options)

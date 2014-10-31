@@ -1,0 +1,12 @@
+include mixins/poly-form/form-control
+doctype html
+html(ng-app="PolyForm")
+  head
+    include partials/header
+  body
+    .container
+
+      - formName = 'ComponentsForm'
+      form(name=formName, ng-cloak="true")
+
+    include partials/footer

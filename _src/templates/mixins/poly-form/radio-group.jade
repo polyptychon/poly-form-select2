@@ -1,0 +1,25 @@
+include form-input
+
+mixin radio-group(options)
+  - options       = options               || {}
+  - className     = options.class         || 'col-md-12'
+  - radioClass    = options.radioClass    || 'radio-inline'
+  - options.type  = options.type          || 'radio'
+  - collection    = options.collection    || null
+  - options.inputClass = 'form-input'
+
+  .row
+    div(class=className)
+      if (collection)
+        each val, index in collection
+          - options.ngChecked = index==0?'true':null
+          div(class=radioClass)
+            - options.value = (typeof val == 'string' || typeof val == 'number' ? val: val.value)
+            - id = options.id || (options.name+$$id || $$id)
+            +form-input(options)
+            label(for=id)= (typeof val == 'string' || typeof val == 'number' ? val: val.label)
+      else
+        .radio
+          .input-group
+            +form-input(options)
+            label(for=id)= label
