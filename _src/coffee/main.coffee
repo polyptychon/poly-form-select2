@@ -1,6 +1,6 @@
-global.$ = global.jQuery = $ = require "jquery"
+global.$ = global.jQuery = $ = require "jquery" unless jQuery
+require 'angular/angular' unless angular?
 require "select2/select2"
-require 'angular/angular'
 require "ui-select2/src/select2"
 
 module.exports =

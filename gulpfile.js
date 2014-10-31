@@ -49,9 +49,10 @@ var DEVELOPMENT = 'development',
     TEST = "test",
     watching = false,
     not_in_dependencies_libs = [
+      "jquery",
       "angular/angular",
-      'select2/select2',
-      'ui-select2/src/select2'
+      //'select2/select2',
+      //'ui-select2/src/select2'
     ];
 
 var env = process.env.NODE_ENV || DEVELOPMENT;
@@ -60,7 +61,7 @@ if (env!==DEVELOPMENT) env = PRODUCTION;
 var jadeFiles = argv.jade || '*';
 
 var packageJson = require('./package.json');
-var dependencies = Object.keys(packageJson && packageJson.dependencies || {});
+var dependencies = []; //Object.keys(packageJson && packageJson.dependencies || []);
 
 _.forEach(not_in_dependencies_libs, function(d) {
   dependencies.push(d);
