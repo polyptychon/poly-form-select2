@@ -134,7 +134,7 @@ gulp.task('lib', function() {
       errorHandler: handleError
     }))
     .pipe(myCoffee('_lib', 'poly-select2.min.js'));
-
+  console.log (dependencies)
   gulp.src(dependencies)
     return browserify()
       .require(dependencies)

@@ -77,7 +77,6 @@
     "ui-select": "git://github.com/angular-ui/ui-select"
   },
   "dependencies": {
-    "animationframe": "git://github.com/HarrisSidiropoulos/animationframe",
     "jquery": "^2.1.1"
   },
   "scripts": {
