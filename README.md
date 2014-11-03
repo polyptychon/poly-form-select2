@@ -71,7 +71,7 @@ angular.module('myApp', ['poly-form-select2']);
 
 ```html
 <input name="select2Input"
-  id="select2Input14"
+  id="select2Input_id"
   class="form-control"
   ng-model="myForm.variable"
   ng-required="true"
