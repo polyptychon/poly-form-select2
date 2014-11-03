@@ -23,8 +23,6 @@ Add a stylesheet to your `index.html` head:
 <link rel="stylesheet" href="/node_modules/poly-form-select2/_lib/poly-form-select2.css">
 ```
 
-Copy fonts from `/node_modules/poly-form-select2/_src/fonts/` to your assets
-
 Add a `<script>` to your `index.html`:
 
 ```html
@@ -53,8 +51,6 @@ Add a stylesheet to your `index.html` head:
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="/bower_components/poly-form-select2/_lib/poly-form-select2.css">
 ```
-
-Copy fonts from `/bower_components/poly-form-select2/_src/fonts/` to your assets
 
 Add a `<script>` to your `index.html`:
 
@@ -87,7 +83,7 @@ angular.module('myApp', ['poly-form-select2']);
   data-query-result-id="id"
   data-query-result-child-text="text"
   data-query-result-child-id="id"
-  data-query-result-children-path="countries" 
+  data-query-result-children-path="countries"
   data-query-result-is-parent-selectable="false"
   data-allow-clear="true"
   data-quiet-millis="500"
