@@ -72,7 +72,9 @@ angular.module('myApp', ['poly-form-select2']);
 ```html
 <input name="select2Input"
   id="select2Input14"
-  ng-model="select2Input14"
+  class="form-control"
+  ng-model="myForm.variable"
+  ng-required="true"
   type="select2-input"
   ui-select2="select2Input.uiSelect2QueryData"
   data-ui-select2-query="http://www.weighttraining.com/api/v2/sm/search?types%5B%5D=:type&amp;amp;term=:value&amp;amp;limit=:limit"
@@ -89,7 +91,5 @@ angular.module('myApp', ['poly-form-select2']);
   data-quiet-millis="500"
   data-minimum-input-length="3"
   data-maximum-input-length="50"
-  data-maximum-selection-size="10"
-  ng-required="true"
-  class="form-control">
+  data-maximum-selection-size="10">
 ```
