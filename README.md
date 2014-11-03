@@ -93,3 +93,19 @@ angular.module('myApp', ['poly-form-select2']);
   maximum-input-length="50"
   maximum-selection-size="10">
 ```
+
+```html
+<select ui-select2="{ allowClear:false }"
+    name="select2"
+    class="form-control"
+    id="select2_id"
+    ng-model="myForm.variable"
+    ng-required="true"
+    data-placeholder="select2">
+
+  <option value=""></option>
+  <option value="male">male</option>
+  <option value="female">female</option>
+  
+</select>
+```
