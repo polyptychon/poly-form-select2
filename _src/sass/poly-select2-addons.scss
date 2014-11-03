@@ -1,3 +1,5 @@
+$gray-light: lighten(#000, 46.7%) !default; // #777
+$input-color-placeholder: $gray-light !default;
 .select2-container {
   height: auto;
   padding: 0px;

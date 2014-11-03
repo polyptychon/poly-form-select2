@@ -15,6 +15,10 @@ $errorText: $state-danger-text !default;
   border-radius: $radius;
 }
 
+@mixin box-shadow($shadow...) {
+  -webkit-box-shadow: $shadow; // iOS <4.3 & Android <4.1
+  box-shadow: $shadow;
+}
 
 .select2-container {
   vertical-align: middle;
