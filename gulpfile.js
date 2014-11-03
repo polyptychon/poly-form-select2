@@ -134,7 +134,7 @@ gulp.task('lib', function() {
     .pipe(plumber({
       errorHandler: handleError
     }))
-    .pipe(myCoffee('_lib', 'poly-select2.min.js'));
+    .pipe(myCoffee('_lib', 'poly-form-select2.min.js'));
 
   gulp.src(dependencies)
     return browserify()
@@ -144,7 +144,7 @@ gulp.task('lib', function() {
           console.log(err.message);
           this.end();
         })
-      .pipe(source('poly-select2-lib.min.js'))
+      .pipe(source('poly-form-select2-lib.min.js'))
       .pipe(duration('vendor'))
       .pipe(buffer())
       .pipe(gulpif(env === PRODUCTION, uglify()))
