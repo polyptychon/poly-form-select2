@@ -74,5 +74,26 @@ angular.module('myApp', ['poly-form-select2']);
 ## Documentation
 
 ```html
-
+<input name="select2Input"
+  id="select2Input14"
+  ng-model="select2Input14"
+  type="select2-input"
+  ui-select2="select2Input.uiSelect2QueryData"
+  data-ui-select2-query="http://www.weighttraining.com/api/v2/sm/search?types%5B%5D=:type&amp;amp;term=:value&amp;amp;limit=:limit"
+  data-query-map-data="{type: 'exercise', limit: -1}"
+  data-query-data-type="jsonp"
+  data-query-results-array-path="results.exercise"
+  data-query-result-text="term"
+  data-query-result-id="id"
+  data-query-result-child-text="text"
+  data-query-result-child-id="id"
+  data-query-result-children-path="countries" 
+  data-query-result-is-parent-selectable="false"
+  data-allow-clear="true"
+  data-quiet-millis="500"
+  data-minimum-input-length="3"
+  data-maximum-input-length="50"
+  data-maximum-selection-size="10"
+  ng-required="true"
+  class="form-control">
 ```
