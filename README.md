@@ -20,7 +20,7 @@ npm install --save polyptychon/poly-form-select2
 Add a stylesheet to your `index.html` head:
 ```html
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="/node_modules/poly-form-select2/_lib/css/poly-form-select2.css">
+<link rel="stylesheet" href="/node_modules/poly-form-select2/lib/css/poly-form-select2.css">
 ```
 
 Add a `<script>` to your `index.html`:
@@ -29,7 +29,7 @@ Add a `<script>` to your `index.html`:
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
 
-<script src="/node_modules/poly-form-select2/_lib/js/poly-form-select2.min.js"></script>
+<script src="/node_modules/poly-form-select2/lib/js/poly-form-select2.min.js"></script>
 ```
 
 Then add `poly-form-select2` as a dependency for your app:
@@ -49,7 +49,7 @@ bower install polyptychon/poly-form-select2
 Add a stylesheet to your `index.html` head:
 ```html
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="/bower_components/poly-form-select2/_lib/css/poly-form-select2.css">
+<link rel="stylesheet" href="/bower_components/poly-form-select2/lib/css/poly-form-select2.css">
 ```
 
 Add a `<script>` to your `index.html`:
@@ -58,7 +58,7 @@ Add a `<script>` to your `index.html`:
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
 
-<script src="/bower_components/poly-form-select2/_lib/js/poly-form-select2.min.js"></script>
+<script src="/bower_components/poly-form-select2/lib/js/poly-form-select2.min.js"></script>
 ```
 
 Then add `poly-form-select2` as a dependency for your app:
@@ -106,6 +106,6 @@ angular.module('myApp', ['poly-form-select2']);
   <option value=""></option>
   <option value="male">male</option>
   <option value="female">female</option>
-  
+
 </select>
 ```
