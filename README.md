@@ -2,6 +2,8 @@
 
 This directive allows you to enhance elements with behaviour from the [select2](http://ivaynberg.github.io/select2/) library.
 
+Demo: http://polyptychon.github.io/poly-form-select2/
+
 # Requirements
 
 - [AngularJS](http://angularjs.org/)
