@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html ng-app="poly-form-select2">
+  <head>
+    <title>Example</title>
+    <meta name="description" content="Example">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/poly-form-select2/lib/css/poly-form-select2.css">
+  </head>
+  <body>
+    <div class="container">
+      <form name="ComponentsForm" ng-cloak="true">
+        <div class="has-feedback">
+          <label for="select2Input14">select2Input</label>
+          <input name="select2Input" id="select2Input14" ng-model="select2Input14" autocomplete="select2Input" type="select2-input" placeholder="select2Input" value="test" ui-select2="select2Input.uiSelect2QueryData" data-ui-select2-query="http://www.weighttraining.com/api/v2/sm/search?types%5B%5D=:type&amp;amp;term=:value&amp;amp;limit=:limit" data-query-map-data="{type: 'exercise', limit: -1}" data-query-data-type="jsonp" data-query-results-array-path="results.exercise" data-query-result-text="term" data-query-result-id="id" data-query-result-child-text="text" data-query-result-child-id="id" data-query-result-children-path="countries" data-query-result-is-parent-selectable="false" data-allow-clear="true" data-quiet-millis="500" data-minimum-input-length="3" data-maximum-input-length="50" data-maximum-selection-size="10" ng-required="true" class="form-control">
+        </div>
+        <div class="has-feedback">
+          <label for="select215">select2</label>
+          <select ui-select2="{ allowClear:false }" name="select2" id="select215" ng-model="select215" data-placeholder="select2" value="male" ng-required="true" class="form-control">
+            <option value=""></option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+          </select>
+        </div>
+        <div class="has-feedback">
+          <label for="select2InputMultiple16">select2InputMultiple</label>
+          <input name="select2InputMultiple" id="select2InputMultiple16" ng-model="select2InputMultiple16" autocomplete="select2InputMultiple" type="select2-input" placeholder="select2InputMultiple" value="test,male" multiple="true" ui-select2="select2InputMultiple.uiSelect2QueryData" data-ui-select2-query="http://www.weighttraining.com/api/v2/sm/search?types%5B%5D=:type&amp;amp;term=:value&amp;amp;limit=:limit" data-query-map-data="{type: 'exercise', limit: -1}" data-query-data-type="jsonp" data-query-results-array-path="results.exercise" data-query-result-text="term" data-query-result-id="id" data-query-result-child-text="text" data-query-result-child-id="id" data-query-result-children-path="countries" data-query-result-is-parent-selectable="false" data-allow-clear="true" data-quiet-millis="500" data-minimum-input-length="3" data-maximum-input-length="50" data-maximum-selection-size="10" ng-required="true" class="form-control">
+        </div>
+        <div class="has-feedback">
+          <label for="select2Multiple17">select2Multiple</label>
+          <select ui-select2="{ allowClear:false }" name="select2Multiple" id="select2Multiple17" ng-model="select2Multiple17" data-placeholder="select2Multiple" value="male,female" multiple="true" ng-required="true" class="form-control">
+            <option value=""></option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+          </select>
+        </div>
+      </form>
+    </div>
+    <!--script(src="assets/js/vendor.js")-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0/angular.min.js"></script>
+    <script src="bower_components/poly-form-select2/lib/js/poly-form-select2.min.js"></script>
+  </body>
+</html>

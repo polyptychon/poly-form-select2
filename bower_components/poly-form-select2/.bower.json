@@ -1,0 +1,14 @@
+{
+  "name": "poly-form-select2",
+  "homepage": "https://github.com/polyptychon/poly-form-select2",
+  "_release": "3dfe51600c",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "3dfe51600c479289a4ffb94e12d32e978f680b57"
+  },
+  "_source": "git://github.com/polyptychon/poly-form-select2.git",
+  "_target": "*",
+  "_originalSource": "polyptychon/poly-form-select2",
+  "_direct": true
+}
