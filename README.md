@@ -71,6 +71,32 @@ angular.module('myApp', ['poly-form-select2']);
 
 ## Documentation
 
+Select2 directive.
+
+##### Attributes
+
+| Name                                    | Type        | Default   | Description |
+| :-------------------------------------  | :---        | :-----    | :-----      |
+| ui-select2                              | object      | null      | Use [input name].uiSelect2QueryData  |
+| multiple                                | String      | null      | Select multiple values |
+| allow-clear                             | Boolean     | false     | Allow clear selected values |
+| ui-select2-query                        | String      | null      | Path to remote JSON. |
+| query-map-data                          | Object      | null      | Mapping data from an object to url(path). See example bellow |
+| query-data-type                         | String      | 'json'    | JSON or JSONP |
+| quiet-millis                            | Number      | 500       | How much time after user stops typing to trigger validation |
+| minimum-input-length                    | Number      | 3         | Minimum search value length to trigger reload |
+| maximum-input-length                    | Number      | null      | Maximum search value length to trigger reload |
+| maximum-selection-size                  | Number      | null      | Limit the number of items that can be selected in a multi-select control. |
+| query-results-array-path                | String      | ''        | Path to an array inside JSON |
+| query-results-text                      | String      | ''        | Variable name for text |
+| query-results-id                        | String      | ''        | Variable name for id |
+| query-results-child-text                | String      | ''        | Variable name for child text |
+| query-results-child-id                  | String      | ''        | Variable name for child id |
+| query-results-children-path             | String      | ''        | Path to an array inside JSON |
+| query-results-is-parent-selectable      | Boolean     | false     | To do |
+
+
+
 ```html
 <input name="select2Input"
   id="select2Input_id"
